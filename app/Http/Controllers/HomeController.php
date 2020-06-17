@@ -25,6 +25,6 @@ class HomeController extends Controller
     public function index()
     {
         $data = Post::where('user_id', '=' , Auth::id())->latest()->get();
-        return view('home.profile',['data' => $data ]); 
+        return view('home',['data' => $data ]); 
     }
 }
