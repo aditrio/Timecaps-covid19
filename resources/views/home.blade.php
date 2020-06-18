@@ -85,8 +85,10 @@
                             </button>
                           </div>
                         </div>
-                           <input class="form-control" type="text" name="title" placeholder="Title..."> <br>
-                           <textarea name="editor1"></textarea>
+                          <label class="text-warning" for="title">TITLE : </label>
+                           <input id="title" required class="form-control" type="text" name="title" placeholder="Title..."> <br>
+                           <label  class="text-warning" for="content">Your story about : </label>
+                           <textarea id="content" required name="editor1"></textarea>
                            <br><br>
                            <button type="submit" class="btn btn-primary btn-rounded px-5" >
                              <i class="ion-ios-send" ></i> Save to Capsule 
